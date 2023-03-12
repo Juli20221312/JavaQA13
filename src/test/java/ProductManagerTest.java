@@ -30,7 +30,7 @@ public class ProductManagerTest {
     public void shouldAdd() {
 
         Product[] expected = {product1, product2, product3, product4, product5};
-        Product[] actual = repo.getProducts();
+        Product[] actual = repo.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -38,7 +38,7 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchProductByNameTwo() {
 
-        Product[] expected = new Product[]{product2, product3};
+        Product[] expected = {product2, product3};
         Product[] actual = manager.searchBy("Смарт");
 
         Assertions.assertArrayEquals(expected, actual);
@@ -47,7 +47,7 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchProductByNameOne() {
 
-        Product[] expected = new Product[]{product1};
+        Product[] expected = {product1};
         Product[] actual = manager.searchBy("Книга");
 
         Assertions.assertArrayEquals(expected, actual);
@@ -56,7 +56,7 @@ public class ProductManagerTest {
     @Test
     public void shouldSearchProductByNameNull() {
 
-        Product[] expected = new Product[]{};
+        Product[] expected = {};
         Product[] actual = manager.searchBy("Мороз");
 
         Assertions.assertArrayEquals(expected, actual);

@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5710d000-bcda-4b4b-adb7-392bdf42e522" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProductRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,38 +44,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/kanban/IdeaProjects/JavaQA13/src/main/java/ru/netology",
-    "last_opened_file_path": "C:/Users/kanban/IdeaProjects/JavaQA11"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/kanban/IdeaProjects/JavaQA13/src/main/java/ru/netology&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kanban/IdeaProjects/JavaQA11&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn test verify" />
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductManagerTest.shouldSearchProductByNameNull">
-    <configuration name="ProductManagerTest.shouldSearchProductByNameNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaQA13" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
-      <option name="METHOD_NAME" value="shouldSearchProductByNameNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest.shouldRemove">
     <configuration name="ProductManagerTest.shouldSearchProductByNameOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaQA13" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
       <option name="METHOD_NAME" value="shouldSearchProductByNameOne" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductManagerTest.shouldSearchProductByNameTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaQA13" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductManagerTest" />
+      <option name="METHOD_NAME" value="shouldSearchProductByNameTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaQA13" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,21 +99,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductRepositoryTest.shouldFindByID5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.shouldRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaQA13" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldFindByID5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductRepositoryTest.shouldFindByID7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaQA13" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldFindByID7" />
+      <option name="METHOD_NAME" value="shouldRemove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductManagerTest.shouldSearchProductByNameNull" />
-        <item itemvalue="JUnit.ProductRepositoryTest.shouldFindByID7" />
-        <item itemvalue="JUnit.ProductRepositoryTest.shouldFindByID5" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldRemove" />
+        <item itemvalue="JUnit.ProductRepositoryTest" />
         <item itemvalue="JUnit.ProductRepositoryTest.shouldFindByID2" />
         <item itemvalue="JUnit.ProductManagerTest.shouldSearchProductByNameOne" />
+        <item itemvalue="JUnit.ProductManagerTest.shouldSearchProductByNameTwo" />
       </list>
     </recent_temporary>
   </component>

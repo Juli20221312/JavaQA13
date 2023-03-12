@@ -1,13 +1,10 @@
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.domain.Book;
 import ru.netology.domain.Product;
 import ru.netology.domain.Smartphone;
 import ru.netology.repository.ProductRepository;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class ProductRepositoryTest {
 
@@ -24,10 +21,10 @@ public class ProductRepositoryTest {
         repo.save(product1);
         repo.save(product2);
         repo.save(product3);
-        repo.removeById(product2.getId());
+        repo.removeById(2);
 
         Product[] expected = {product1, product3};
-        Product[] actual = repo.getProducts();
+        Product[] actual = repo.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -42,7 +39,7 @@ public class ProductRepositoryTest {
         repo.save(product5);
 
         Product[] expected = {product1, product2, product3, product4, product5};
-        Product[] actual = repo.getProducts();
+        Product[] actual = repo.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -56,8 +53,8 @@ public class ProductRepositoryTest {
         repo.save(product4);
         repo.save(product5);
 
-        Product[] expected = new Product[]{product2};
-        Product[] actual = new Product[]{repo.findById(2)};
+        Product[] expected = {product2};
+        Product[] actual = {repo.findById(2)};
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -72,8 +69,8 @@ public class ProductRepositoryTest {
         repo.save(product4);
         repo.save(product5);
 
-        Product[] expected = new Product[]{product5};
-        Product[] actual = new Product[]{repo.findById(5)};
+        Product[] expected = {product5};
+        Product[] actual = {repo.findById(5)};
 
         Assertions.assertArrayEquals(expected, actual);
 
@@ -88,8 +85,8 @@ public class ProductRepositoryTest {
         repo.save(product4);
         repo.save(product5);
 
-        Product[] expected = new Product[]{null};
-        Product[] actual = new Product[]{repo.findById(7)};
+        Product[] expected = {null};
+        Product[] actual = {repo.findById(7)};
 
         Assertions.assertArrayEquals(expected, actual);
 

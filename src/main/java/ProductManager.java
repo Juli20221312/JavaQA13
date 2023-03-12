@@ -15,10 +15,12 @@ public class ProductManager {
 
     public Product[] searchBy(String text) {
         Product[] result = new Product[0];
-        for (Product product : repo.getProducts()) {
+        for (Product product : repo.findAll()) {
             if (matches(product, text)) {
                 Product[] tmp = new Product[result.length + 1];
-                System.arraycopy(result, 0, tmp, 0, result.length);
+                for (int i = 0; i < result.length; i++) {
+                    tmp[i] = result[i];
+                }
                 tmp[result.length] = product;
                 result = tmp;
             }
@@ -34,6 +36,5 @@ public class ProductManager {
         }
 
     }
-
 
 }
