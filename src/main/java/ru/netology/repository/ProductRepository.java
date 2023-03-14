@@ -2,6 +2,7 @@ package ru.netology.repository;
 
 import ru.netology.domain.Product;
 
+
 public class ProductRepository {
     private Product[] products = new Product[0];
 
@@ -18,7 +19,14 @@ public class ProductRepository {
         return products;
     }
 
+
+
     public void removeById(int id) {
+        Product removeProduct = findById(id);
+        if (removeProduct == null) {
+            throw new NotFoundException(id);
+        }
+
         Product[] tmp = new Product[products.length - 1];
         int copyToIndex = 0;
         for (Product product : products) {
@@ -39,5 +47,7 @@ public class ProductRepository {
         }
         return null;
     }
+
+
 
 }
